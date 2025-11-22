@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquibancada Digital</title>
+    <link rel="stylesheet" href="Sobre/CSS/sobre.css">
+    </head>
+<body>
+      <header class="cabecalho">
+    <h1 class="titulo-site">Arquibancada Digital</h1>
+    <nav class="nav-links">
+        <a href="index.html" class="nav-item">Início</a>
+        <a href="produtos.html" class="nav-item">Produtos</a>
+        <a href="historia.html" class="nav-item">História</a>
+        <a href="sobre.html" class="nav-item active">Sobre Nós</a>
+    </nav>
+</header>
+   <section id="about-us-hero">
+        <div class="container">
+            <h2>Nossa Paixão, Nosso Jogo</h2>
+            <p>
+                Bem-vindo à Arquibancada Digital! <br> 
+                Aqui, a paixão pelo futebol se encontra com a inovação tecnológica. Nascemos de um projeto acadêmico, mas com um coração vibrante que pulsa em cada lance, cada análise e cada estatística que compartilhamos.
+            </p>
+            <p>
+                Somos um grupo de estudantes unidos pelo desejo de ir além do placar, explorando o esporte com profundidade e criatividade. Este é o nosso campo, e você é o nosso torcedor mais valioso.
+            </p>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <div class="container">
+            <h3 class="section-title">Nossa História: Da Sala de Aula para o Campo Virtual</h3>
+            <p class="section-text">
+                A ideia da Arquibancada Digital surgiu de um desafio de faculdade: criar algo simples, bonito e funcional. Mas o que começou como uma tarefa rapidamente se transformou em uma verdadeira paixão. Percebemos que podíamos unir nossos conhecimentos em desenvolvimento web com o amor que todos compartilhamos pelo futebol. O objetivo era claro: construir um espaço onde a análise tática, as estatísticas e as histórias do esporte rei pudessem ser apresentadas de forma inovadora e acessível. Cada linha de código, cada escolha de design e cada texto foi pensado para refletir a dedicação e a sinergia da nossa equipe.
+            </p>
+
+            <h3 class="section-title">Nosso Compromisso: Análise, Dados e Conexão</h3>
+            <p class="section-text">
+                A Arquibancada Digital é mais do que um site; é um testemunho do nosso compromisso em fornecer conteúdo de qualidade. Acreditamos que o futebol vai além dos 90 minutos, envolvendo estratégia, história e muita emoção. Por isso, nos dedicamos a:
+            </p>
+            <ul class="section-text" style="text-align: left; list-style-position: inside; padding-left: 20px; color:white">
+                <li>Análises Táticas Aprofundadas: Desvendamos os segredos por trás das formações e estratégias dos times.</li>
+                <li>Dados e Estatísticas Relevantes: Transformamos números em insights para você entender o jogo de uma nova forma.</li>
+                <li>Conexão com a Comunidade: Criamos um espaço para o debate saudável e a troca de ideias entre apaixonados pelo esporte.</li>
+                <li>Inovação e Usabilidade: Nosso foco é uma experiência intuitiva e visualmente agradável, do mobile ao desktop.</li>
+            </ul>
+            <p class="section-text">
+                Com a Arquibancada Digital, queremos convidar você a ver o futebol sob uma nova perspectiva, com a mesma paixão e dedicação que nos movem.
+            </p>
+
+            <h2 class="section-title">Conheça Nosso Time: Os Craques por Trás da Bola</h2>
+            
+            <div class="equipe">
+
+                <div class="card">
+                    <div class="foto">👤</div>
+                    <div class="nome">Kalliny</div>
+                    <div class="funcao">Desenvolvimento & Estrutura</div> 
+                </div>
+
+                <div class="card">
+                    <div class="foto">🎨</div>
+                    <div class="nome">Thayná</div>
+                    <div class="funcao">Design & Estrutura</div> 
+                </div>
+
+                <div class="card">
+                    <div class="foto">💡</div>
+                    <div class="nome">Gabriel Bruno</div>
+                    <div class="funcao">Estrutura & Suporte</div> 
+                </div>
+
+                <div class="card">
+                    <div class="foto">⚙️</div>
+                    <div class="nome">João Pedro</div>
+                    <div class="funcao">Desenvolvimento & Estrutura</div> 
+                </div>
+
+                <div class="card">
+                    <div class="foto">📌</div>
+                    <div class="nome">Iago</div>
+                    <div class="funcao">Desenvolvimento & Estrutura</div> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+ 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".card");
+            cards.forEach((card, i) => {
+                setTimeout(() => {
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0)";
+                }, i * 180);
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+/* Paleta minimalista */
+:root {
+  --bg: #0c0c0c;
+  --card: #1a1a1a;
+  --accent: #155f8a;
+  --accent-soft: #8a153855;
+  --text: #f5f5f5;
+  --border: #292929;
+}
+
+/* Fundo e texto */
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: var(--text);
+  font-family: "Inter", Arial, sans-serif;
+  transition: background .3s ease, color .3s ease;
+}
+
+/* Container central */
+.container {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 25px;
+  box-shadow: 0 0 25px rgba(0,0,0,.4);
+  animation: fadeIn .6s ease;
+}
+
+/* Tabs */
+#pills-tab {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav-pills .nav-link {
+  background: #2a2a2a;
+  color: var(--text);
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: .25s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background: #3a3a3a;
+  transform: translateY(-2px);
+}
+
+.nav-pills .nav-link.active {
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent-soft);
+  transform: scale(1.05);
+}
+
+/* Transição suave entre abas */
+.tab-pane {
+  animation: fadeIn .45s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Accordion */
+.accordion {
+  margin: 0 auto;
+  max-width: 1050px;
+  width: 100%;
+  background: transparent;
+}
+
+.accordion-item {
+  background: #1b1b1b;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: .3s ease;
+}
+
+.accordion-item:hover {
+  border-color: var(--accent);
+}
+
+/* Botão do accordion */
+.accordion-button {
+  background: #202020;
+  color: var(--text);
+  font-weight: 600;
+  padding: 18px;
+  border: none;
+  transition: .3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--accent);
+  color: white;
+  box-shadow: inset 0 0 20px rgba(0,0,0,.35);
+}
+
+.accordion-collapse {
+  animation: slideDown .4s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tratamento de imagens */
+.accordion-body img {
+  display: block;
+  margin: 25px auto;
+  border-radius: 12px;
+  transition: transform .3s ease, box-shadow .3s ease;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 12px rgba(0,0,0,.4);
+}
+
+.img-gigas {
+  max-width: 380px !important;
+}
+
+.accordion-body img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(255,255,255,.15);
+}
+
+/* Horizontal */
+.img-horizontal {
+  max-width: 650px;
+}
+
+/* Vertical */
+.img-vertical {
+  max-height: 650px;
+  width: auto;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .img-horizontal {
+    max-width: 95%;
+  }
+  .img-vertical {
+    max-height: 420px;
+  }
+}
+
+/* Fundo escuro ao abrir */
+#zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#zoom-content {
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#zoom-img {
+  cursor: zoom-in;
+  transition: transform .18s ease, width .2s ease, height .2s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* Botões de zoom */
+.zoom-controls {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  display: flex;
+  gap: 12px;
+  z-index: 10000;
+}
+
+.zoom-btn {
+  background: white;
+  color: black;
+  border: none;
+  font-size: 22px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.25s ease;
+}
+
+.zoom-btn:hover {
+  transform: scale(1.15);
+  background: #e2e2e2;
+}
+
+.cabecalho {
+  background: #050000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 30px;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.titulo-site {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ESTILOS ESPECÍFICOS PARA LINKS DO HEADER */
+.nav-links .nav-item {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: .25s;
+}
+
+/* Underline moderno APENAS para navbar */
+.nav-links .nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0%;
+  background: #00ffaa;
+  transition: width .3s ease;
+}
+
+.nav-links .nav-item:hover::after,
+.nav-links .nav-item.active::after {
+  width: 100%;
+}
+
+.nav-links .nav-item:hover {
+  color: white;
+}
+
+.btn-voltar-container {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #111;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.btn-voltar:hover {
+  background: #00ffaa;
+  color: #000;
+  transform: translateX(-3px);
+}
+
+/* Responsivo */
+@media (max-width: 750px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .titulo-site {
+    font-size: 1.7rem;
+  }
+
+  .nav-links .nav-item {
+    font-size: 1rem;
+  }
+
+  .btn-voltar-container {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("torcida2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', Arial, sans-serif;
+    
+    
+}
+.cabeçalho-container{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: auto;
+    align-content: center;
+}
+.titulo{
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+.cabeçalho-container img{
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+#card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    width: 90%;
+    height: 25rem;
+    aspect-ratio: 3/1;
+    border: white 5px;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    scroll-padding: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
+    align-self: center;
+    margin-bottom: 20px;
+    
+}
+
+.container{ 
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container>div{
+    display: flex;
+    flex-direction: column;
+    border: 3px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 40rem;
+    width: 35rem;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    min-width: 360px;
+    min-height: 360px;
+}
+
+.btn{
+  margin: 20px 5px 20px;
+  background-color: #00040a;
+  border: none;
+  color: white;
+  padding: 10px 30px 10px;
+  border-radius: 10px;
+  
+}
+
+li{
+  margin: 10px;
+    list-style: none;
+    padding: 10px;
+    font-family: 'lucinda',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.cabecalho{
+    background-color:#050000;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding:0;
+    
+}
+.cabecalho-menu{
+    display:flex;
+    gap:16px;
+    justify-content: center;
+}
+
+.cabecalho-menu-item{
+  font-family:'sarala',sans-serif;
+  font-weight:400;
+  font-size:1.4rem;
+  color:#eeebeb;
+    
+}
+.btns{
+  display: flex;
+  justify-content: center;
+}
+.img-noticia{
+  width: auto;
+  height: 200px;
+  display: flex;
+  margin: auto;
+  object-fit: contain;
+}
+
+.cabecalho {
+  background: #050000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 30px;
+  height: auto;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+
+.titulo-site {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-item {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: .25s;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0%;
+  background: #00ffaa;
+  transition: width .3s ease;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+@media (max-width: 750px) {
+
+  .cabecalho {
+    flex-direction: column;   
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: center;  
+    gap: 18px;
+  }
+
+  .titulo-site {
+    font-size: 1.7rem;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+  }
+}
