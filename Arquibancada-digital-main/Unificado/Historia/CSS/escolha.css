@@ -7,7 +7,7 @@
     }
 
     body {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      background-image: url("/Arquibancada-digital-main/Unificado/Home/CSS/arquibancadapb.png");
       color: #fff;
       min-height: 100vh;
       display: flex;
@@ -35,7 +35,7 @@
 
     .header p {
       font-size: 1.2rem;
-      color: #a0a0c0;
+      color: white;
       max-width: 600px;
       margin: 0 auto;
     }
@@ -131,32 +131,17 @@
 
     .team-desc {
       font-size: 1rem;
-      color: #a0a0c0;
+      color: white;
       text-align: center;
       margin-bottom: 20px;
       line-height: 1.5;
     }
 
-    .fluminense .team-logo {
-      background: linear-gradient(135deg, #8b1a1a, #b22222);
-    }
-
-    .flamengo .team-logo {
-      background: linear-gradient(135deg, #c8102e, #8b0000);
-    }
-
-    .vasco .team-logo {
-      background: linear-gradient(135deg, #000000, #333333);
-    }
-
-    .botafogo .team-logo {
-      background: linear-gradient(135deg, #000000, #2f4f4f);
-    }
 
     .footer {
       margin-top: 60px;
       text-align: center;
-      color: #a0a0c0;
+      color: white;
       font-size: 0.9rem;
     }
 
