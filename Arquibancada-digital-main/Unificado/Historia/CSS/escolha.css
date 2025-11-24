@@ -7,7 +7,7 @@
     }
 
     body {
-      background-image: url("/Arquibancada-digital-main/Unificado/Home/CSS/arquibancadapb.png");
+      background-image: url("arquibancadapb.png");
       min-height: 100vh;
       flex-direction: column;
       align-items: center;

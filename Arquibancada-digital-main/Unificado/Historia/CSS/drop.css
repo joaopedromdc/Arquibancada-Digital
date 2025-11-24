@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("/Arquibancada-digital-main/Unificado/Home/CSS/arquibancadapb.png");
+  background-image: url("arquibancadapb.png");
   color: var(--text);
   font-family: "Inter", Arial, sans-serif;
   transition: background .3s ease, color .3s ease;

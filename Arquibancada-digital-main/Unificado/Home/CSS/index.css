@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("/Arquibancada-digital-main/Unificado/Home/CSS/arquibancadapb.png");
+    background-image: url("arquibancadapb.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
