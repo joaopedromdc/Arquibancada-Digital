@@ -63,7 +63,7 @@ option{
 
  .btninscrever{
       display:flex;
-      padding: 5px 5px 5px;
+      padding: 0px 5px 5px;
       font-size: 18px;
       background: black;
       color: white;

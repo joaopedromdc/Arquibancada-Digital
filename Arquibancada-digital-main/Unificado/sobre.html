@@ -14,7 +14,28 @@
         <a href="produtos.html" class="nav-item">Produtos</a>
         <a href="escolha.html" class="nav-item">História</a>
         <a href="sobre.html" class="nav-item active">Sobre Nós</a>
+        <button onclick="abrirFormulario()" id="btnLoginNav" class="btninscrever">Login </button>
+        <button onclick="fazerLogout()" id="btnLogoutNav" class="btninscrever" style="display:none;">Sair</button>
     </nav>
+    <!-- Modal do formulário -->
+    <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharFormulario()">&times;</span>
+      
+      <h2 class="login">Login</h2>
+      <form onsubmit="redirecionar(event)" id="formUsuario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" maxlength="50" required>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha" maxlength="50" required>      
+        <br>
+         <button type="button" class="submit-btn" onclick="fazerLogin()">Login</button>
+      </form>
+      <h5>Não possui cadastro?<button type="button" class="btn-cadastrar" onclick="fazerCadastro()">Clique aqui</button> para criar uma conta</h5>
+    </div>
+  </div>
+
 </header>
    <section id="about-us-hero">
         <div class="container">
@@ -89,17 +110,7 @@
     </div>
 
  
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const cards = document.querySelectorAll(".card");
-            cards.forEach((card, i) => {
-                setTimeout(() => {
-                    card.style.opacity = "1";
-                    card.style.transform = "translateY(0)";
-                }, i * 180);
-            });
-        });
-    </script>
+    <script src="/Arquibancada-digital-main/Unificado/Sobre/CSS/sobre.js"></script>
 
 </body>
 </html>
