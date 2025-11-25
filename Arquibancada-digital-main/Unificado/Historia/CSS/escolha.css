@@ -234,7 +234,7 @@
   bottom: -3px;
   height: 2px;
   width: 0%;
-  background: #00ffaa;
+  background: linear-gradient(90deg, #00b4db, #0083b0);
   transition: width .3s ease;
 }
 
