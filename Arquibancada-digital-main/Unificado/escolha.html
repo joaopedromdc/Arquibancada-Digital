@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
   <link rel="stylesheet" href="Historia/CSS/escolha.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arquibancada Digital</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
 </head>
 
 <body>
@@ -50,7 +48,7 @@
 
   <div class="teams-container">
     <div class="teams-row">
-      <a href="fluminense.html" class="team-card fluminense">
+      <a href="fluminense.html" class="team-card fluminense" data-time="fluminense">
         <div class="team-logo pulse">
           <img src="Home/img/fluminense.png" alt="Fluminense">
         </div>
@@ -58,7 +56,7 @@
         <p class="team-desc">Clube de tradição e glórias, fundado em 1902. Tricolor de Laranjeiras.</p>
       </a>
 
-      <a href="flamengo.html" class="team-card flamengo">
+      <a href="flamengo.html" class="team-card flamengo" data-time="flamengo">
         <div class="team-logo pulse">
           <img src="Home/img/flamengo.png" alt="Flamengo">
         </div>
@@ -68,7 +66,7 @@
     </div>
     
     <div class="teams-row">
-      <a href="vasco.html" class="team-card vasco">
+      <a href="vasco.html" class="team-card vasco" data-time="vasco">
         <div class="team-logo pulse">
           <img src="Home/img/vasco.png" alt="Vasco da Gama">
         </div>
@@ -76,7 +74,7 @@
         <p class="team-desc">Clube de tradição e conquistas históricas. Gigante da Colina.</p>
       </a>
 
-      <a href="botafogo.html" class="team-card botafogo">
+      <a href="botafogo.html" class="team-card botafogo" data-time="botafogo">
         <div class="team-logo pulse">
           <img src="Home/img/botafogo.png" alt="Botafogo">
         </div>
@@ -86,10 +84,16 @@
     </div>
   </div>
 
+  <audio id="fluminenseSound" src="Historia/Som/fluminense-radio-globo.mp3" preload="auto"></audio>
+  <audio id="flamengoSound" src="Historia/Som/flamengo-radio-globo.mp3" preload="auto"></audio>
+  <audio id="vascoSound" src="Historia/Som/vaxco-da-gama.mp3" preload="auto"></audio>
+  <audio id="botafogoSound" src="Historia/Som/botafogo-radio-globo.mp3" preload="auto"></audio>
+
   <div class="footer">
     <p>Arquibancada Digital &copy; 2025 - Todos os direitos reservados</p>
   </div>
 
   <script src="Historia/JS/escolha.js"></script>
+  <script src="Historia/JS/som.js"></script>
 </body>
 </html>
