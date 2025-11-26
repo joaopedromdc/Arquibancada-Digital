@@ -12,23 +12,16 @@ O site foi estruturado para entregar uma navegação fluida, com design responsi
 
 ---
 
-## ⚙️ Funcionalidades
-
-O Arquibancada-Digital reúne conteúdos esportivos e organiza sua navegação de maneira clara, permitindo que o usuário explore notícias, selecione times, visualize informações relevantes e acompanhe conteúdo atualizado.  
-
-A experiência proposta inclui leitura de artigos, visualização de seções organizadas e interação futura através de comentários e sistema de comunidade. O layout responsivo garante boa visualização em qualquer tamanho de tela, mantendo legibilidade e boa estrutura visual. No roadmap do projeto, está prevista a adição de novas funcionalidades, como buscas internas e eventual sistema de autenticação.
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 A plataforma é construída utilizando os pilares fundamentais da web:
 
-- **HTML** para estruturação das páginas  
-- **CSS** para estilização, organização visual e responsividade  
-- **JavaScript** para interatividade e comportamentos dinâmicos
+- **HTML**  
+- **CSS**  
+- **JavaScript** 
+- **Bootstrap** 
 
-A lógica do projeto foi desenvolvida priorizando código limpo, simples e fácil de manter. A estrutura atual permite que futuramente o site seja expandido com frameworks modernos, bibliotecas adicionais ou integração com APIs esportivas.
+A lógica do projeto foi desenvolvida priorizando código limpo, simples e fácil de manter. A estrutura atual permite que futuramente o site seja expandido com frameworks modernos e bibliotecas adicionais
 
 ---
 
