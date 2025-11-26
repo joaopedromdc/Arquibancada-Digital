@@ -5,7 +5,6 @@
 
     <link rel="stylesheet" href="Historia/CSS/style.css">
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
     <title>Club de Regatas Vasco da Gama</title>
@@ -16,31 +15,24 @@
     <meta name="author" content="Gabriel Martins">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        .img-gigas {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-
-<body>
-
 <header class="cabecalho">
     <h1 class="titulo-site">Arquibancada Digital</h1>
-
     <nav class="nav-links">
-        <a href="index.html" class="nav-item">Ínicio</a>
+        <a href="index.html" class="nav-item">Inicio</a>
         <a href="produtos.html" class="nav-item">Produtos</a>
         <a href="escolha.html" class="nav-item active">História</a>
-        <a href="sobre.html" class="nav-item">Sobre Nós</a>
-        <button onclick="abrirFormulario()" id="btnLoginNav" class="btninscrever">Login </button>
-        <button onclick="fazerLogout()" id="btnLogoutNav" class="btninscrever" style="display:none;">Sair</button>        
+        <a href="sobre.html" class="nav-item">Sobre Nós</a>        
     </nav>
 </header>
 
-<div class="btn-voltar-container">
-  <a href="escolha.html" class="btn-voltar">
-    <i class="fas fa-arrow-left"></i>
-    Voltar
-  </a>
-</div>
-
-
+<body>
     <div class="container">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
@@ -54,6 +46,9 @@
             </li>
             <li class="nav-item">
                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-dinamite">Era Roberto Dinamite (1970–1990)</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-eraatual">Club de Regatas Vasco da Gama (2000–2025)</button>
             </li>
             <li class="nav-item">
                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-hino">Hino do Vasco</button>
@@ -116,7 +111,7 @@
                             <div class="accordion-body">
                                 <p>O futebol entrou na história do Vasco no início do século XX, mas ganhou força de verdade em 1916, quando o clube criou sua primeira equipe oficial. Diferentemente de outros clubes da época, o Vasco abriu suas portas para jogadores negros, mulatos, imigrantes e operários, rompendo padrões elitistas do futebol carioca. Essa postura inclusiva permitiu ao clube conquistar rapidamente resultados expressivos, culminando no histórico título de 1923, quando o Vasco venceu o Campeonato Carioca com um time formado por atletas populares um marco que mudou o rumo do futebol brasileiro.</p>
                                 <h5>Primeira e Atual Camisa</h5>
-                                <img src="historia/fotos/Camisa do Vasco 1898.png" alt="Primeira Camisa Vasco" width="250px"height="250px"> <img src="historia/fotos/Camisa Vasco.png" alt="Camisa Do Vasco" width="250px"height="250px">
+                                <img src="Historia/fotos/Camisa do Vasco 1898.png"alt ="Primeira Camisa Vasco" width="250px"height="250px"> <img src="fotos/Camisa Vasco.png" alt="Camisa Do Vasco" width="250px"height="250px">
                             </div>
                         </div>
                     </div>
@@ -149,7 +144,7 @@
                         <div id="eraremo2" class="accordion-collapse collapse" data-bs-parent="#accordion-eraremo">
                             <div class="accordion-body">
                                 <p>Nos primeiros anos após sua fundação, o Vasco da Gama tinha o remo como principal modalidade esportiva. O clube foi criado exatamente para competir nessa área, que era a mais popular e prestigiada do Rio de Janeiro no final do século XIX e início do XX. O Vasco rapidamente se destacou nas regatas, conquistando títulos e formando equipes competitivas. O remo ajudou o clube a ganhar respeito, visibilidade e a construir uma base sólida de sócios apaixonados</p>
-                                <img src="historia/fotos/Time de Remo Vasco 1905.png" alt="Time de Remo do Vasco">
+                                <img src="Historia/fotos/Time de Remo Vasco 1905.png" alt="Time de Remo do Vasco">
                             </div>
                         </div>
                     </div>
@@ -189,7 +184,7 @@
                         <div id="eraremo5" class="accordion-collapse collapse" data-bs-parent="#accordion-eraremo">
                             <div class="accordion-body">
                                 <p>Embora o foco inicial fosse o remo, o Vasco começou a investir no futebol no início do século XX. O primeiro grande marco veio em 1922, quando o clube conquistou seu primeiro título oficial de futebol: o Campeonato Carioca da Segunda Divisão. Esse triunfo garantiu ao Vasco o acesso para a elite em 1923, ano histórico em que a equipe venceria o Campeonato Carioca com um time formado por jogadores de origem humilde, marcando profundamente a história do futebol brasileiro e afirmando o caráter inclusivo do clube.</p>
-                                <img src="historia/fotos/Primeiro Titulo Vasco.png" alt="Elenco campeão Vasco 1923" class="img-gigas">
+                                <img src="Historia/fotos/Primeiro Titulo Vasco.png" alt="Elenco campeão Vasco 1923">
                             </div>
                         </div>
                     </div>
@@ -208,7 +203,7 @@
                         <div id="saojanuario1" class="accordion-collapse collapse show" data-bs-parent="#accordion-saojanuario">
                             <div class="accordion-body">
                                 <p>A Era de São Januário e da Consolidação representa um dos períodos mais importantes da história do Vasco da Gama. Após crescer no cenário esportivo e social carioca, o clube alcançou um marco fundamental com a construção do Estádio de São Januário, inaugurado em 1927, que se tornaria o centro de sua identidade nas décadas seguintes. Na época, o estádio era o maior do Brasil e um dos maiores da América do Sul, fruto do esforço coletivo da comunidade vascaína, especialmente da colônia portuguesa.</p>
-                                <img src="historia/fotos/São Januario.jpg" alt="São Januario" class="img-gigas">
+                                <img src="Historia/fotos/São Januario.jpg" alt="São Januario" class="img-gigas">
                             </div>
                         </div>
                     </div>
@@ -248,7 +243,7 @@
                         <div id="saojanuario4" class="accordion-collapse collapse" data-bs-parent="#accordion-saojanuario">
                             <div class="accordion-body">
                                 <p>O ponto mais marcante dessa era veio em 1948, quando o Vasco conquistou o Sul-Americano de Campeões, disputado no Chile. Esse torneio é considerado por muitos historiadores como o precursor da atual Copa Libertadores. Com essa conquista, o Vasco se firmou como uma das potências do futebol continental, recebendo reconhecimento internacional.</p>
-                                <img src="historia/fotos/Titulo Vasco 1948.png" alt="Elenco Campeão 1948" class="img-gigas">    
+                                <img src="Historia/fotos/Titulo Vasco 1948.png" alt="Elenco Campeão 1948">    
                             </div>
                         </div>
                     </div>
@@ -295,7 +290,7 @@
                         <div id="dinamite1" class="accordion-collapse collapse show" data-bs-parent="#accordion-dinamite">
                             <div class="accordion-body">
                                 <p>A Era de Ouro do Vasco, entre 1970 e 1990, foi marcada principalmente pela ascensão e consolidação de Roberto Dinamite, maior ídolo da história do clube. Revelado nas categorias de base vascaínas, Dinamite estreou em 1971 e rapidamente se tornou um fenômeno, sendo até hoje o maior artilheiro da história do Vasco, o maior artilheiro da história do Campeonato Brasileiro e um dos jogadores mais emblemáticos do futebol nacional.</p>
-                                <img src="historia/fotos/Roberto Dinamite.png" alt="Roberto Dinamite Pelo Vasco" class="img-gigas"> 
+                                <img src="Historia/fotos/Roberto Dinamite.png" alt="Roberto Dinamite Pelo Vasco"> 
                             </div>
                         </div>
                     </div>
@@ -323,7 +318,7 @@
                         <div id="dinamite3" class="accordion-collapse collapse" data-bs-parent="#accordion-dinamite">
                             <div class="accordion-body">
                                 <p>O grande marco dessa era veio em 1974, quando o Vasco conquistou seu primeiro Campeonato Brasileiro, com Dinamite como protagonista. A conquista colocou o clube no topo do futebol nacional e marcou definitivamente essa geração.</p>
-                                <img src="historia/fotos/Time Campeão 1974.png" alt="Elenco Campeão 1974" class="img-gigas"> 
+                                <img src="Historia/fotos/Time Campeão 1974.png" alt="Elenco Campeão 1974"> 
                             </div>
                         </div>
                     </div>
@@ -356,6 +351,56 @@
                 </div>
             </div>
 
+            <!--Década de 2000 (2000–2009)-->
+            <div class="tab-pane fade" id="pills-eraatual">
+                <div class="accordion" id="accordion-eraatual">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#eraatual1">
+                                Década de 2000 (2000–2009)
+                            </button>
+                        </h2>
+                        <div id="eraatual1" class="accordion-collapse collapse show" data-bs-parent="#accordion-eraatual">
+                            <div class="accordion-body">
+                                <p>A década de 2000 teve início com resquícios de uma geração vencedora do final dos anos 1990. Em 2000, o Vasco conquistou dois títulos importantes: a Copa João Havelange e a Copa Mercosul, conquistas que reforçaram sua presença continental e fecharam um ciclo vitorioso.</p> 
+                                <p>Entretanto, apesar do início promissor, os anos seguintes foram marcados por dificuldades. A partir de 2001, o clube começou a enfrentar uma série de problemas financeiros e administrativos, o que afetou diretamente seu desempenho esportivo. Trocas constantes de treinadores e a diminuição do investimento no elenco levaram o time a campanhas instáveis nos campeonatos nacionais.</p>
+                                <p>A crise se aprofundou entre 2005 e 2008, quando o Vasco passou por um período de forte irregularidade. Em 2008, o clube enfrentou seu momento mais crítico até então: o primeiro rebaixamento de sua história para a Série B do Campeonato Brasileiro. Em 2009, o foco se voltou totalmente à reconstrução e ao retorno à elite. O clube conseguiu se reorganizar parcialmente, mas sua estrutura ainda estava fragilizada.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#eraatual2">
+                                Década de 2010 (2010–2019)
+                            </button>
+                        </h2>
+                        <div id="eraatual2" class="accordion-collapse collapse show" data-bs-parent="#accordion-eraatual">
+                            <div class="accordion-body">
+                                <p>A década de 2010 começou com o desafio de reconstrução. Em 2010, o Vasco retornou à Série A e, no ano seguinte, viveu seu melhor momento do período. Em 2011, o clube conquistou a Copa do Brasil, garantindo presença na Libertadores, e ainda terminou o Campeonato Brasileiro como vice-campeão. A presença de ídolos históricos, como Juninho Pernambucano, trouxe esperança de uma nova fase vitoriosa.</p> 
+                                <p>Contudo, a recuperação não se sustenta por muito tempo. Em 2012, o desempenho do time começou a oscilar novamente, e em 2013 o Vasco sofreu seu segundo rebaixamento para a Série B. A instabilidade persistiu nos anos seguintes: o clube subiu em 2014, voltou a cair em 2015 e retornou novamente à Série A em 2016. Essa sequência de descensos e acessos evidenciou a fragilidade da gestão e a necessidade de reestruturação.</p>
+                                <p>Entre 2017 e 2019, o Vasco permaneceu na primeira divisão, porém sem campanhas de destaque. Os problemas financeiros e estruturais seguiram limitando a competitividade do clube. A década terminou com o Vasco vivendo sob forte pressão da torcida e com clara necessidade de modernização institucional.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#eraatual3">
+                                Década de 2020 (2020–2025)
+                            </button>
+                        </h2>
+                        <div id="eraatual3" class="accordion-collapse collapse show" data-bs-parent="#accordion-eraatual">
+                            <div class="accordion-body">
+                                <p>A década de 2020 começou como uma das mais difíceis da história vascaína. Em 2020, o Vasco voltou a ser rebaixado, desta vez para a Série B pela quarta vez, agravando ainda mais a crise esportiva e financeira. Em 2021, a equipe novamente não conseguiu retornar à elite, exibindo um desempenho abaixo da expectativa e reforçando a urgência por mudanças estruturais profundas.</p> 
+                                <p>Essa transformação começou a tomar forma em 2022, quando o clube aprovou a criação da Vasco SAF, um movimento decisivo para sua reorganização. Com a entrada de novos investidores e a profissionalização da gestão, o Vasco buscou um novo modelo de governança e planejamento esportivo. Com dificuldades, mas com reforços pontuais, o clube conseguiu o acesso à Série A ao fim da temporada.</p>
+                                <p>O ano de 2023 foi marcado por altos e baixos. Apesar de investimentos iniciais, a equipe teve dificuldades de adaptação e passou grande parte do campeonato brigando contra o rebaixamento. A permanência foi conquistada apenas nas últimas rodadas, reflexo de um elenco ainda em construção e de um clube em processo de transição.</p>
+                                <p>A partir de 2024 e 2025, o modelo SAF começou a consolidar bases mais sólidas. O clube voltou-se para a montagem de um elenco competitivo, para o desenvolvimento de categorias de base e para a implementação de uma gestão mais racional e estruturada. O período representa uma fase de reconstrução gradual, cujo foco principal é devolver ao Vasco estabilidade esportiva e posicioná-lo novamente como um clube protagonista no cenário nacional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
             <!-- HINO DO VASCO -->
             <div class="tab-pane fade" id="pills-hino">
                 <div class="accordion" id="accordion-hino">
@@ -425,7 +470,7 @@
                                                 <h5 class="card-title">Reproduzir Hino</h5>
                                                 <div class="text-center">
                                                     <audio controls class="w-100">
-                                                        <source src="historia/Hinos/hino-vasco-da-gama.mp3" type="audio/mp3">
+                                                        <source src="Hinos/hino-vasco-da-gama.mp3" type="audio/mp3">
                                                         Seu navegador não suporta o elemento de áudio.
                                                     </audio>
                                                     <p class="mt-3">Ouça o hino oficial do Club de Regatas Vasco da Gama</p>
@@ -469,7 +514,7 @@
                                 <div class="row">
                                     <div class="col-md-6 mb-4">
                                         <div class="card h-100">
-                                            <img src="historia/fotos/Titulo Liberta 1998 Vasco.png" class="card-img-top" alt="Copa Libertadores 1998">
+                                            <img src="Historia/fotos/Titulo Liberta 1998 Vasco.png" class="card-img-top" alt="Copa Libertadores 1998">
                                             <div class="card-body">
                                                 <h5 class="card-title">Copa Libertadores da América</h5>
                                                 <p class="card-text"><strong>1998</strong> - O maior título internacional do clube, conquistado no ano do centenário contra o Barcelona de Guayaquil.</p>
@@ -479,7 +524,7 @@
                                     
                                     <div class="col-md-6 mb-4">
                                         <div class="card h-100">
-                                            <img src="historia/fotos/Copa Mercosul 2000.png" class="card-img-top" alt="Copa Mercosul 2000">
+                                            <img src="Historia/fotos/Copa Mercosul 2000.png" class="card-img-top" alt="Copa Mercosul 2000">
                                             <div class="card-body">
                                                 <h5 class="card-title">Copa Mercosul</h5>
                                                 <p class="card-text"><strong>2000</strong> - Conquistada com lendária virada contra o Palmeiras, após estar perdendo por 3 a 0.</p>
@@ -489,7 +534,7 @@
                                     
                                     <div class="col-md-6 mb-4">
                                         <div class="card h-100">
-                                            <img src="historia/fotos/Campeonato Brasileiro Vasco 2000.png" class="card-img-top" alt="Campeonato Brasileiro">
+                                            <img src="Historia/fotos/Campeonato Brasileiro Vasco 2000.png" class="card-img-top" alt="Campeonato Brasileiro">
                                             <div class="card-body">
                                                 <h5 class="card-title">Campeonato Brasileiro</h5>
                                                 <p class="card-text">
@@ -502,7 +547,7 @@
                                     
                                     <div class="col-md-6 mb-4">
                                         <div class="card h-100">
-                                            <img src="historia/fotos/Copa do Brasil Vasco 2011.png" class="card-img-top" alt="Copa do Brasil">
+                                            <img src="Historia/fotos/Copa do Brasil Vasco 2011.png" class="card-img-top" alt="Copa do Brasil">
                                             <div class="card-body">
                                                 <h5 class="card-title">Copa do Brasil</h5>
                                                 <p class="card-text"><strong>2011</strong> - Título que marcou o reerguimento do clube após um período de dificuldades.</p>
@@ -568,7 +613,7 @@
                                 </div>
                                 
                                 <div class="text-center mt-4">
-                                    <img src="historia/fotos/Sala de Trofeus Vasco.png" alt="Sala de Troféus do Vasco" class="img-fluid rounded">
+                                    <img src="Historia/fotos/Sala de Trofeus Vasco.png" alt="Sala de Troféus do Vasco" class="img-fluid rounded">
                                     <p class="mt-2"><em>Sala de Troféus do Club de Regatas Vasco da Gama</em></p>
                                 </div>
                             </div>
@@ -579,8 +624,6 @@
         </div>
     </div>
 
-    <script src="Home/JS/login.js"></script>
-    <script src="Historia/JS/zoom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <div id="zoom-overlay">
