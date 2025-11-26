@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!overlay || !zoomImg) return;
 
-  // Abrir modal ao clicar em qualquer imagem
   imgs.forEach(img => {
     img.style.cursor = "zoom-in";
     img.addEventListener("click", () => {
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Fechar clicando fora da imagem
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) {
       overlay.style.display = "none";
@@ -34,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ESC fecha
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       overlay.style.display = "none";
@@ -42,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Clique na imagem → zoom
   zoomImg.addEventListener("click", (e) => {
     e.stopPropagation();
 
@@ -58,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     zoomImg.style.transform = `translate(${imgX}px, ${imgY}px) scale(${scale})`;
   });
 
-  // Arrastar quando ampliado
   zoomImg.addEventListener("mousedown", (e) => {
     if (scale <= 1) return;
 

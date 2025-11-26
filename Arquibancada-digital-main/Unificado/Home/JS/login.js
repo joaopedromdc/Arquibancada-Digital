@@ -1,14 +1,12 @@
-// --- Abrir modal ---
+
 function abrirFormulario() {
   document.getElementById("formModal").style.display = "block";
 }
 
-// --- Fechar modal ---
 function fecharFormulario() {
   document.getElementById("formModal").style.display = "none";
 }
 
-// --- Fechar ao clicar fora ---
 window.onclick = function(event) {
   const modal = document.getElementById("formModal");
   if (event.target === modal) {
@@ -16,7 +14,6 @@ window.onclick = function(event) {
   }
 };
 
-// --- Quando a página carrega, verifica se está logado ---
 window.onload = function() {
   if (localStorage.getItem("usuario")) {
     document.getElementById("btnLoginNav").style.display = "none";
@@ -24,7 +21,6 @@ window.onload = function() {
   }
 };
 
-// --- Função de CADASTRO ---
 function fazerCadastro() {
   const nome = document.getElementById("nome").value;
   const senha = document.getElementById("senha").value;
@@ -41,12 +37,9 @@ function fazerCadastro() {
 
   fecharFormulario();
 
-  // Esconde login e mostra logout
   document.getElementById("btnLoginNav").style.display = "none";
   document.getElementById("btnLogoutNav").style.display = "inline-block";
 }
-
-// --- Função de LOGIN ---
 function fazerLogin() {
   const nome = document.getElementById("nome").value;
   const senha = document.getElementById("senha").value;
@@ -63,7 +56,6 @@ function fazerLogin() {
     alert("Login realizado com sucesso!");
     fecharFormulario();
 
-    // Esconde login e mostra logout
     document.getElementById("btnLoginNav").style.display = "none";
     document.getElementById("btnLogoutNav").style.display = "inline-block";
 
@@ -72,15 +64,13 @@ function fazerLogin() {
   }
 }
 
-// --- Função SAIR ---
 function fazerLogout() {
-  // Limpa localStorage
+
   localStorage.removeItem("usuario");
   localStorage.removeItem("senha");
 
   alert("Você saiu da conta!");
 
-  // Mostrar Login / esconder Logout
   document.getElementById("btnLoginNav").style.display = "inline-block";
   document.getElementById("btnLogoutNav").style.display = "none";
 }

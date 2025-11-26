@@ -50,22 +50,18 @@ function filtrarProdutosPorCheckbox(carrosselId) {
   const carrossel = document.getElementById(carrosselId);
   const produtos = carrossel.querySelectorAll('.produto-detalhes');
 
-  // Pega todos os checkboxes selecionados
   const checkboxes = document.querySelectorAll('input[name="time"]:checked');
   const timesSelecionados = Array.from(checkboxes).map(cb => cb.value);
 
   produtos.forEach(produto => {
-    // Se nenhum filtro estiver selecionado, mostra todos
     if(timesSelecionados.length === 0) {
       produto.style.display = 'block';
     } else {
-      // Mostra o produto se o time dele estiver selecionado
       produto.style.display = timesSelecionados.includes(produto.dataset.time) ? 'block' : 'none';
     }
   });
 }
 
-// Adiciona evento aos checkboxes para filtrar quando mudarem
 const checkboxes = document.querySelectorAll('input[name="time"]');
 checkboxes.forEach(cb => {
   cb.addEventListener('change', () => filtrarProdutosPorCheckbox('carrossel1'));
@@ -74,26 +70,22 @@ checkboxes.forEach(cb => {
   cb.addEventListener('change', () => filtrarProdutosPorCheckbox('carrossel4'));
 });
 
-// Função para abrir o formulário
     function abrirFormulario() {
       document.getElementById('formModal').style.display = 'block';
     }
 
-    // Função para fechar o formulário
     function fecharFormulario() {
       document.getElementById('formModal').style.display = 'none';
     }
 
-    // Função para redirecionar com base na seleção do time
     function redirecionar(event) {
-      event.preventDefault(); // Evita o envio do formulário
+      event.preventDefault(); 
       const timeSelecionado = document.getElementById('time').value;
       if (timeSelecionado) {
-        window.location.href = timeSelecionado; // Redireciona para a URL do time selecionado
+        window.location.href = timeSelecionado; 
       }
     }
 
-    // Fecha o modal se o usuário clicar fora dele
     window.onclick = function(event) {
       const modal = document.getElementById('formModal');
       if (event.target == modal) {
@@ -101,17 +93,14 @@ checkboxes.forEach(cb => {
       }
     }
 
-    // --- Abrir modal ---
 function abrirFormulario() {
   document.getElementById("formModal").style.display = "block";
 }
 
-// --- Fechar modal ---
 function fecharFormulario() {
   document.getElementById("formModal").style.display = "none";
 }
 
-// --- Fechar ao clicar fora ---
 window.onclick = function(event) {
   const modal = document.getElementById("formModal");
   if (event.target === modal) {
@@ -119,7 +108,6 @@ window.onclick = function(event) {
   }
 };
 
-// --- Quando a página carrega, verifica se está logado ---
 window.onload = function() {
   if (localStorage.getItem("usuario")) {
     document.getElementById("btnLoginNav").style.display = "none";
@@ -127,7 +115,6 @@ window.onload = function() {
   }
 };
 
-// --- Função de CADASTRO ---
 function fazerCadastro() {
   const nome = document.getElementById("nome").value;
   const senha = document.getElementById("senha").value;
@@ -144,12 +131,10 @@ function fazerCadastro() {
 
   fecharFormulario();
 
-  // Esconde login e mostra logout
   document.getElementById("btnLoginNav").style.display = "none";
   document.getElementById("btnLogoutNav").style.display = "inline-block";
 }
 
-// --- Função de LOGIN ---
 function fazerLogin() {
   const nome = document.getElementById("nome").value;
   const senha = document.getElementById("senha").value;
@@ -166,7 +151,6 @@ function fazerLogin() {
     alert("Login realizado com sucesso!");
     fecharFormulario();
 
-    // Esconde login e mostra logout
     document.getElementById("btnLoginNav").style.display = "none";
     document.getElementById("btnLogoutNav").style.display = "inline-block";
 
@@ -175,15 +159,13 @@ function fazerLogin() {
   }
 }
 
-// --- Função SAIR ---
 function fazerLogout() {
-  // Limpa localStorage
+
   localStorage.removeItem("usuario");
   localStorage.removeItem("senha");
 
   alert("Você saiu da conta!");
 
-  // Mostrar Login / esconder Logout
   document.getElementById("btnLoginNav").style.display = "inline-block";
   document.getElementById("btnLogoutNav").style.display = "none";
 }

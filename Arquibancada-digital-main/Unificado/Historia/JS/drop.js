@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      e.stopPropagation(); // evita que o clique "vaze" para o document
+      e.stopPropagation();
       dropdowns.forEach(d => {
         if (d !== drop) d.classList.remove("show");
       });

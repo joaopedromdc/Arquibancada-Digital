@@ -82,9 +82,8 @@ option{
 
  }
 
-    /* Fundo escuro do modal */
     .modal {
-      display: none; /* escondido por padrão */
+      display: none; 
       position: fixed;
       z-index: 10;
       left: 0;
@@ -95,7 +94,6 @@ option{
       background: rgba(0,0,0,0.6);
     }
 
-    /* Caixa do formulário */
     .modal-content {
       background: white;
       margin: 10% auto;
