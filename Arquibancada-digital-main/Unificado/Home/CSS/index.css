@@ -13,8 +13,6 @@ body{
     width: 100%;
     height: 100%;
     font-family: 'Montserrat', Arial, sans-serif;
-    
-    
 }
 .cabeçalho-container{
     display: flex;
@@ -50,7 +48,6 @@ body{
     min-height: 300px;
     align-self: center;
     margin-top: 30px
-    
 }
 
 .container{ 
@@ -74,7 +71,6 @@ body{
     overflow: hidden;
     min-width: 360px;
     min-height: 360px;
-
 }
 
 .btn{
@@ -84,7 +80,6 @@ body{
   color: white;
   padding: 10px 30px 10px;
   border-radius: 10px;
-  
 }
 
 li{
@@ -95,32 +90,7 @@ li{
     font-weight: 400;
     font-size: 18px;
 }
-.cabecalho{
-    background-color:#050000;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    padding:0;
-    
-}
-.cabecalho-menu{
-    display:flex;
-    gap:16px;
-    justify-content: center;
-}
 
-.cabecalho-menu-item{
-  font-family:'sarala',sans-serif;
-  font-weight:400;
-  font-size:1.4rem;
-  color:#eeebeb;
-    
-}
-.btns{
-  display: flex;
-  justify-content: center;
-}
 .img-noticia{
   width: auto;
   height: 200px;
@@ -210,26 +180,6 @@ li{
   }
 }
 
-.cabecalho-menu{
-    display:flex;
-    gap:16px;
-}
-.cabecalho-menu-item{
-   font-family:'sarala',sans-serif;
-   font-weight:400;
-    font-size:18px;
-    color:#eeebeb;
-    
-}
-option{
-    font-family:'sarala',sans-serif;
-   font-weight:400;
-    font-size:18px;
-    color:#f7f3f3;
-    background-color:#00040a;
-}
-
-
  .btninscrever{
       display:flex;
       padding: 0px 5px 5px;
@@ -242,9 +192,6 @@ option{
       flex-direction:row;
       overflow: hidden;
       align-self: right;
-     
-      
-
  }
  .btninscrever:hover{
     background: white;
@@ -351,5 +298,3 @@ option{
       -webkit-text-fill-color: transparent;
       text-shadow: 0 0 20px rgba(0, 180, 219, 0.3);
     }
-
-    
